@@ -1,0 +1,134 @@
+DAY1
+
+Renier van Wyk
+renier.van.wyk@gmail.com
+
+Https://0x0.st/Ne4d
+https://incusdata.site/pan/py/python-ipyp-20201207-course.html
+
+Code page:      https://incusdata.site/pan/py/python-ipyp-20201207-code.html
+Course Notes:   https://incusdata.site/pan/py/python-ipyp-20201207-notes.html
+
+https://docs.python.org/3/
+
+https://zealdocs.org/
+
+
+https://kapeli.com/dash
+
+
+
+Advantagers of writing python:
+1st line:   #!/usr/bin/env python3
+2nd line:   # -*- coding utf-8 -*-
+ chmod a+x <script>
+
+
+Try Launcher 
+
+Data Types
+    INT
+    Floating point
+    Modulars
+
+umeric Validation
+Python does not have a “isnumber” type of function. Depending on your needs, there are several options, all having pros and cons. The following functions are relatively simple, and the is_float function works for fixed point and exponential notation.
+
+py — Numeric validation example functions
+def is_int (s):
+   """
+   Checks if string `s` can be converted to an `int`. Returns `True` or `False`.
+   """
+   try:
+      int(s)
+   except: #←*any* exception
+      return False
+   return True
+
+def is_float (s):
+   """
+   Checks if string `s` can be converted to a `float`. Returns `True` or `False`.
+   """
+   try:
+      float(s)
+   except: #←*any* exception
+      return False
+   return True
+Instead of catching any exception, we could have used: except ValueError:, but it seems a bit specific — any exception would still mean it cannot be converted for whatever reason. A faster option might be the following, but may not deal with all cases:
+
+py — Numeric check, option #1
+def is_number (s):
+   """
+   Checks if string **`s`** contains only digits. Deals with integers, and fixed
+   point values, but will fail on exponential floating point notation and also
+   negative numbers (and on leading `+` sign too). Returns `True` or `False`.
+   """
+   return s.replace('.', '', 1).isdigit()
+You can deal with negative numbers by making it ignore leading plus and minus signs, at the expense of efficiency.
+
+py — Numeric check, option #2
+def is_number (s):
+   """
+   Checks if string `s` contains only digits. Deals with integers, and fixed
+   point values, but will fail on exponential floating point notation.
+   Returns `True` or `False`.
+   """
+   return s.lstrip('-+').s.replace('.', '', 1).isdigit()
+Unless you really need the speed, stick with the first two examples, or… use a specialised module from PyPi, called fastnumbers.
+
+Conversion to float/int, with optional ‘fail’ value
+def to_float(s, fail=None):
+   """
+   An exception-free “conversion” from a string to a `float`. Optionally,
+   caller can specify what to return for invalid input (a default).
+   """
+   try:
+      return float(s)
+   except:
+      return fail
+
+def to_int(s, fail=None):
+   """
+   An exception-free “conversion” from a string to an `int`. Optionally,
+   caller can specify what to return for invalid input (a default).
+   """
+   try:
+      return int(s)
+   except:
+      return fail
+Its documentation for to_float says it all, but you basically use it instead of the built-in float(), but unlike the latter, our to_float() will not throw an exception on invalid strings. Instead, it returns None by default, or you can choose what to return:
+
+py — Examples using to_float() for validation
+num = to_float("garbage", fail=1.23)
+print(f"num = {num}")
+num = to_float("garbage")
+if not num:                             #← `None` is treated as `False`.
+   ···                                  #← error handling.
+if num is None:                         #← Alternative check for `None`.
+   ···                                  #← error handling.
+num = to_float(input("Enter a float:"))  #← Prompt, read input, and convert.
+if num is None:                         #← Alternative check for `None`.
+   ···                                  #← error handling.
+The same applies to the to_int variant. However, another kind of validation requires a number to be within a certain range: MIN…MAX (inclusive). Here are some example patterns you can use:
+
+py — Check if a number is in a valid range
+import sys
+MIN = 1.0
+MAX = 20.0
+number = to_float(input("Number?: "))
+if number < MIN or number > MAX:      #←check if out of range.
+   print("0) Out of range!")
+
+if number >= MIN and number <= MAX:   #←check if in range #1
+   print("1) Number is in range.")
+
+if MIN <= number and number <= MAX:   #←check if in range #2
+   print("2) Number is in range.")
+
+if MIN <= number <= MAX:              #←Python shorthand for previous.
+   print("3) Number is in range.")
+Note that the last pattern is very much a Python-only shorthand syntax.
+
+"\n" is new line
+
+HOME WORK:

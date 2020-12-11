@@ -1,0 +1,12 @@
+DAY3
+
+Renier van Wyk
+
+textbook page 63
+
+cmd - brew cleanup
+    brew ugrade
+
+itterate through items in dict
+
+PAGE 124

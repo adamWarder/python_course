@@ -1,0 +1,427 @@
+/* fonts */
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Light'),local('IosevkaTerm-Light'), */
+         url('fnt/iosevkaterm-light.woff2') format('woff2'),
+         url('fnt/iosevkaterm-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Light Italic'), local('IosevkaTerm-Light-Italic'), */
+         url('fnt/iosevkaterm-lightitalic.woff2') format('woff2'),
+         url('fnt/iosevkaterm-lightitalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Regular'),local('IosevkaTerm-Regular'), */
+         url('fnt/iosevkaterm-regular.woff2') format('woff2'),
+         url('fnt/iosevkaterm-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Italic'), local('IosevkaTerm-Italic'), */
+         url('fnt/iosevkaterm-italic.woff2') format('woff2'),
+         url('fnt/iosevkaterm-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Medium'),local('IosevkaTerm-Medium'), */
+         url('fnt/iosevkaterm-medium.woff2') format('woff2'),
+         url('fnt/iosevkaterm-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka Term';
+    src: /* local('Iosevka Term Medium Italic'),local('IosevkaTerm-MediumItalic'), */
+         url('fnt/iosevkaterm-mediumitalic.woff2') format('woff2'),
+         url('fnt/iosevkaterm-mediumitalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Incus';
+  font-style: normal;
+  font-weight: 400;
+  src: /* local('Fira Incus'), local('Fira Incus'), */
+       url('fnt/firasans-book.woff2') format('woff2'),
+       url('fnt/firasans-book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Fira Incus';
+  font-style: italic;
+  font-weight: 400;
+  src: /* local('Fira Incus Italic'), local('Fira Incus-Italic'), */
+       url('fnt/firasans-bookitalic.woff2') format('woff2'),
+       url('fnt/firasans-bookitalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Fira Incus';
+  font-style: normal;
+  font-weight: 600;
+  src: /* local('Fira Incus Medium'), local('Fira Incus-Medium'), */
+       url('fnt/firasans-medium.woff2') format('woff2'),
+       url('fnt/firasans-medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Fira Incus';
+  font-style: italic;
+  font-weight: 600;
+  src: /* local('Fira Incus Medium Italic'), local('Fira Incus Book-MediumItalic'), */
+       url('fnt/firasans-mediumitalic.woff2') format('woff2'),
+       url('fnt/firasans-mediumitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'incus-icons';
+  src: url('fnt/incus-icons.eot?95616754');
+  src: url('fnt/incus-icons.eot?95616754#iefix') format('embedded-opentype'),
+       url('fnt/incus-icons.woff2?95616754') format('woff2'),
+       url('fnt/incus-icons.woff?95616754') format('woff'),
+       url('fnt/incus-icons.ttf?95616754') format('truetype'),
+       url('fnt/incus-icons.svg?95616754#incus-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "incus-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .1em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-link:before { content: '\e800'; } /* '' */
+.icon-attention:before { content: '\e801'; } /* '' */
+.icon-doc:before { content: '\e802'; } /* '' */
+.icon-star:before { content: '\e803'; } /* '' */
+.icon-star-empty:before { content: '\e804'; } /* '' */
+.icon-th-outline:before { content: '\e805'; } /* '' */
+.icon-th-large-outline:before { content: '\e806'; } /* '' */
+.icon-th-large:before { content: '\e807'; } /* '' */
+.icon-folder:before { content: '\e808'; } /* '' */
+.icon-ok:before { content: '\e809'; } /* '' */
+.icon-folder-open:before { content: '\e80a'; } /* '' */
+.icon-cog:before { content: '\e80b'; } /* '' */
+.icon-plus:before { content: '\e80c'; } /* '' */
+.icon-plus-circled:before { content: '\e80d'; } /* '' */
+.icon-minus:before { content: '\e80e'; } /* '' */
+.icon-minus-circled:before { content: '\e80f'; } /* '' */
+.icon-info-circled:before { content: '\e810'; } /* '' */
+.icon-block:before { content: '\e811'; } /* '' */
+.icon-tag:before { content: '\e812'; } /* '' */
+.icon-tags:before { content: '\e813'; } /* '' */
+.icon-cancel-1:before { content: '\e814'; } /* '' */
+.icon-zoom-in:before { content: '\e815'; } /* '' */
+.icon-zoom-out:before { content: '\e816'; } /* '' */
+.icon-lightbulb-1:before { content: '\e817'; } /* '' */
+.icon-scissors:before { content: '\e818'; } /* '' */
+.icon-down-dir:before { content: '\e819'; } /* '' */
+.icon-up-dir:before { content: '\e81a'; } /* '' */
+.icon-check:before { content: '\e81b'; } /* '' */
+.icon-floppy:before { content: '\e81c'; } /* '' */
+.icon-down-open:before { content: '\e81d'; } /* '' */
+.icon-left-open:before { content: '\e81e'; } /* '' */
+.icon-right-open:before { content: '\e81f'; } /* '' */
+.icon-up-open:before { content: '\e820'; } /* '' */
+.icon-cog-outline:before { content: '\e821'; } /* '' */
+.icon-help-circled:before { content: '\e822'; } /* '' */
+.icon-home:before { content: '\e823'; } /* '' */
+.icon-note-beamed:before { content: '\e824'; } /* '' */
+.icon-play:before { content: '\e825'; } /* '' */
+.icon-stop:before { content: '\e826'; } /* '' */
+.icon-pause:before { content: '\e827'; } /* '' */
+.icon-flash:before { content: '\e828'; } /* '' */
+.icon-check-2:before { content: '\e829'; } /* '' */
+.icon-star-1:before { content: '\e82a'; } /* '' */
+.icon-note:before { content: '\e82b'; } /* '' */
+.icon-star-filled:before { content: '\e82c'; } /* '' */
+.icon-cancel:before { content: '\e82d'; } /* '' */
+.icon-stop-outline:before { content: '\e82e'; } /* '' */
+.icon-stop-1:before { content: '\e82f'; } /* '' */
+.icon-record-outline:before { content: '\e830'; } /* '' */
+.icon-record:before { content: '\e831'; } /* '' */
+.icon-flash-outline:before { content: '\e832'; } /* '' */
+.icon-flash-2:before { content: '\e833'; } /* '' */
+.icon-flash-1:before { content: '\e834'; } /* '' */
+.icon-lamp:before { content: '\e835'; } /* '' */
+.icon-down-1:before { content: '\e838'; } /* '' */
+.icon-left-1:before { content: '\e839'; } /* '' */
+.icon-right-1:before { content: '\e83a'; } /* '' */
+.icon-up-1:before { content: '\e83b'; } /* '' */
+.icon-down-bold:before { content: '\e83c'; } /* '' */
+.icon-left-bold:before { content: '\e83d'; } /* '' */
+.icon-right-bold:before { content: '\e83e'; } /* '' */
+.icon-up-bold:before { content: '\e83f'; } /* '' */
+.icon-bookmark:before { content: '\e840'; } /* '' */
+.icon-bookmark-empty:before { content: '\e841'; } /* '' */
+.icon-record-1:before { content: '\e842'; } /* '' */
+.icon-check-empty-1:before { content: '\e843'; } /* '' */
+.icon-check-1:before { content: '\e844'; } /* '' */
+.icon-asterisk:before { content: '\e845'; } /* '' */
+.icon-down-open-1:before { content: '\f004'; } /* '' */
+.icon-up-open-1:before { content: '\f005'; } /* '' */
+.icon-right-open-1:before { content: '\f006'; } /* '' */
+.icon-left-open-1:before { content: '\f007'; } /* '' */
+.icon-check-empty:before { content: '\f096'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-lightbulb:before { content: '\f0eb'; } /* '' */
+.icon-exchange:before { content: '\f0ec'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-desktop:before { content: '\f108'; } /* '' */
+.icon-circle-empty:before { content: '\f10c'; } /* '' */
+.icon-circle:before { content: '\f111'; } /* '' */
+.icon-folder-empty:before { content: '\f114'; } /* '' */
+.icon-folder-open-empty:before { content: '\f115'; } /* '' */
+.icon-terminal:before { content: '\f120'; } /* '' */
+.icon-info:before { content: '\f129'; } /* '' */
+.icon-attention-alt:before { content: '\f12a'; } /* '' */
+.icon-ellipsis:before { content: '\f141'; } /* '' */
+.icon-ellipsis-vert:before { content: '\f142'; } /* '' */
+.icon-level-up:before { content: '\f148'; } /* '' */
+.icon-level-down:before { content: '\f149'; } /* '' */
+.icon-doc-inv:before { content: '\f15b'; } /* '' */
+.icon-doc-text-inv:before { content: '\f15c'; } /* '' */
+.icon-down:before { content: '\f175'; } /* '' */
+.icon-up:before { content: '\f176'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */
+.icon-linux:before { content: '\f17c'; } /* '' */
+.icon-bug:before { content: '\f188'; } /* '' */
+.icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-cube:before { content: '\f1b2'; } /* '' */
+.icon-cubes:before { content: '\f1b3'; } /* '' */
+.icon-circle-thin:before { content: '\f1db'; } /* '' */
+.icon-toggle-off:before { content: '\f204'; } /* '' */
+.icon-toggle-on:before { content: '\f205'; } /* '' */
+.icon-cc:before { content: '\f20a'; } /* '' */
+.icon-diamond:before { content: '\f219'; } /* '' */
+.icon-hourglass-o:before { content: '\f250'; } /* '' */
+.icon-creative-commons:before { content: '\f25e'; } /* '' */
+.icon-television:before { content: '\f26c'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-linkedin-rect:before { content: '\f31b'; } /* '' */
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Light'), local('Source Serif Pro-Light'),
+         url('fnt/SourceSerifPro-Light.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Light Italic'), local('Source Serif Pro-LightItalic'),
+         url('fnt/SourceSerifPro-LightIt.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro'), local('Source Serif Pro-Regular'),
+         url('fnt/SourceSerifPro-Regular.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Bold'), local('Source Serif Pro-Bold'),
+         url('fnt/SourceSerifPro-Bold.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Italic'), local('Source Serif Pro-Italic'),
+         url('fnt/SourceSerifPro-It.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Bold Italic'), local('Source Serif Pro-BoldItalic'),
+         url('fnt/SourceSerifPro-BoldIt.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-BoldIt.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Semibold Italic'), local('Source Serif Pro-SemiboldItalic'),
+         url('fnt/SourceSerifPro-SemiboldIt.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-SemiboldIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+    src: local('Source Serif Pro Semibold'), local('Source Serif Pro-Semibold'),
+         url('fnt/SourceSerifPro-Semibold.woff2') format('woff2'),
+         url('fnt/SourceSerifPro-Semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 200;
+   font-style: normal;
+   src: url('fnt/ivcus-code-extralight.woff2') format('woff2'),
+        url('fnt/ivcus-code-extralight.woff') format('woff'),
+        url('fnt/ivcus-code-extralight.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 200;
+   font-style: italic;
+   src: url('fnt/ivcus-code-extralightitalic.woff2') format('woff2'),
+        url('fnt/ivcus-code-extralightitalic.woff') format('woff'),
+        url('fnt/ivcus-code-extralightitalic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 300;
+   font-style: normal;
+   src: url('fnt/ivcus-code-light.woff2') format('woff2'),
+        url('fnt/ivcus-code-light.woff') format('woff'),
+        url('fnt/ivcus-code-light.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 300;
+   font-style: italic;
+   src: url('fnt/ivcus-code-lightitalic.woff2') format('woff2'),
+        url('fnt/ivcus-code-lightitalic.woff') format('woff'),
+        url('fnt/ivcus-code-lightitalic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 400;
+   font-style: normal;
+   src: url('fnt/ivcus-code-regular.woff2') format('woff2'),
+        url('fnt/ivcus-code-regular.woff') format('woff'),
+        url('fnt/ivcus-code-regular.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 400;
+   font-style: italic;
+   src: url('fnt/ivcus-code-italic.woff2') format('woff2'),
+        url('fnt/ivcus-code-italic.woff') format('woff'),
+        url('fnt/ivcus-code-italic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 500;
+   font-style: normal;
+   src: url('fnt/ivcus-code-medium.woff2') format('woff2'),
+        url('fnt/ivcus-code-medium.woff') format('woff'),
+        url('fnt/ivcus-code-medium.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 500;
+   font-style: italic;
+   src: url('fnt/ivcus-code-mediumitalic.woff2') format('woff2'),
+        url('fnt/ivcus-code-mediumitalic.woff') format('woff'),
+        url('fnt/ivcus-code-mediumitalic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 600;
+   font-style: normal;
+   src: url('fnt/ivcus-code-semibold.woff2') format('woff2'),
+        url('fnt/ivcus-code-semibold.woff') format('woff'),
+        url('fnt/ivcus-code-semibold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 600;
+   font-style: italic;
+   src: url('fnt/ivcus-code-semibolditalic.woff2') format('woff2'),
+        url('fnt/ivcus-code-semibolditalic.woff') format('woff'),
+        url('fnt/ivcus-code-semibolditalic.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: bold;
+   font-style: normal;
+   src: url('fnt/ivcus-code-bold.woff2') format('woff2'),
+        url('fnt/ivcus-code-bold.woff') format('woff'),
+        url('fnt/ivcus-code-bold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Ivcus Code Web';
+   font-weight: 700;
+   font-style: italic;
+   src: url('fnt/ivcus-code-bolditalic.woff2') format('woff2'),
+        url('fnt/ivcus-code-bolditalic.woff') format('woff'),
+        url('fnt/ivcus-code-bolditalic.ttf') format('truetype');
+}
+
+/* end fonts */

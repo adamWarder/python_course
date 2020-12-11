@@ -1,0 +1,12 @@
+First text more text last text
+
+
+ONE TWO THREE FOUR
+ONE, TWO, THREE, FOUR
+ONE, TWO, THREE, FOUR.
+ONE; TWO; THREE; FOUR!!
+
+
+On the next line
+1) Written to standard output.
+2) Written to standard output too.

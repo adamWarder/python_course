@@ -1,0 +1,36 @@
+
+sh — Create and Update a Python Virtual Environment
+
+$ python -m venv pie
+$ source pie/bin/activate
+$ python -m pip install --upgrade pip
+$ pip install black yapf pylint flake8
+
+Standard venv
+From around Python 3.3, the venv module became standard. It duplicates most, if not all, of the Virtualenv features. It also requires you to source an activate script in ‹env-dir› on POSIX, or run activate.bat on Windows, but it is stored in the ‹env-dir›\Scripts directory.
+
+Similarly, to restore your environment, you can simply run deactivate in any shell or operating system. The environment can be removed by deleting the ‹env-dir›ectory.
+
+Here is an example sequence of Windows PowerShell commands to create and experiment with a virtual environment using the standard venv:
+
+pwsh — Example command sequence to create and use a virtual environment
+
+> cd C:\Course\Work
+> python -m venv --prompt MYPY mypy
+> . .\mypy\Scripts\Activate.ps1
+> which python
+> pip list
+> python -m pip install pip --upgrade
+> pip list
+> deactivate       #←only when done with the environment
+
+The --prompt MYPY is optional; if not present, the virtual environment directory name (mypy in the example), will be added to your command-line prompt.
+
+In a POSIX shell environment (Linux, MacOS, WSL, MSYS2, Cygwin), the commands are the same, except for two considirations:
+
+Set working directory: cd $HOME/course/work
+Activate environment: source $HOME/course/work/mypy/bin/activate
+To activate the environment if you are running a Command Prompt shell, use:
+
+Set working directory: cd C:\course\work
+Activate environment: mypy\bin\activate.bat

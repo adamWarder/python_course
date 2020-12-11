@@ -1,0 +1,33 @@
+DAY2
+
+Renier van Wyk
+
+Bool
+    anything other than:
+        none
+        {}
+        []
+        0
+    will return a true value
+
+
+    Excersize 1
+        multiple prints
+
+
+sh — Create and Update a Python Virtual Environment
+
+$ python -m venv pie
+$ source pie/bin/activate
+$ python -m pip install --upgrade pip
+$ pip install black yapf pylint flake8
+
+Get screen size
+
+import shutil
+width = shutil.get_terminal_size().columns
+height = shutil.get_terminal_size().rows
+
+
+Loops
+for i, c in []
